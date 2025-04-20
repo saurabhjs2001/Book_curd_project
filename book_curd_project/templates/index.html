@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Welcome</h2>
+    <a href="/addbook">Add a new Book</a>
+    <table border="2">
+        <tr>
+            <th>Book_Id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>
+            <th>action</th>
+        </tr>
+        {% for book in books %}
+        <tr>
+            <td>{{book.id}}</td>
+            <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.price}}</td>
+            <td>
+                <a href="/update/{{book.id}}">Update</a> &nbsp;
+                <a href="/delete/{{book.id}}">delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
