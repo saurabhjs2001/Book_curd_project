@@ -20,7 +20,7 @@ It’s a simple web application to manage a list of books with fields like title
 
 - **Python 3**
 - **Django (4.x or 3.x)**
-- **SQL** 
+- **SQLite** 
 - **HTML/CSS**
 
 
